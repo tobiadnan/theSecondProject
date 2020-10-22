@@ -1,0 +1,199 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* up css begin now */
+@media screen and (max-width: 1000px){
+    .container{
+        max-width: fit-main;
+        min-width: min-main;
+    }
+    .imagehero{
+        height: 100px;
+        /* cover size */
+        background-size: cover;
+        /* fixing image to cover */
+        background-position: 0 -100px
+        
+    }
+}
+body{
+    background-color: #aeaeae;
+    background-image: url(img/double-bubble-outline.png);
+    font: 16px/23px arial;
+    color: #030000;
+}
+.top-bar{
+   background-color: #39e1ff;
+   color: rgb(0, 0, 0);
+   text-align: center;
+   font-size: 40px;
+   font-family: fantasy;
+   padding-top: 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    z-index: 9999;
+    position: fixed;
+    border-bottom: salmon 3px solid;
+}
+.container{
+    margin: 85px auto;
+    margin-bottom: 0;
+    width: 950px;
+    background-color: rgb(235, 235, 235);
+    position: relative;
+}
+.twitter{
+    width: 200px;
+    height: 200px;
+    background-image: url(img/590032_ribbon_512x512.png);
+    position: absolute;
+    text-indent: -9999px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    top: -15px;
+    right: -89px;
+}
+.header{
+    padding: 20px;
+}
+.header .judul{
+    font-size: 45px;
+    font-weight: bold;
+}
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 7px;
+    padding: 5px;
+}
+.header a{
+    text-decoration: none;
+    color: salmon;
+}
+.header a:hover{
+    background-color: lightblue;
+    color: white;
+}
+.imagehero{
+    height: 320px;
+    /* cover size */
+    background-size: cover;
+    /* fixing image to cover */
+    background-position: 0 -170px;
+    /* position of image that we use */
+    background-image: url(../latihan_membuatwebsederhana/img/imagehero.jpg);
+    /* image source */
+    border-bottom: 5px solid turquoise;
+    border-top: 5px solid salmon;
+    /* add the border to our image */
+}
+.main{
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    text-align: justify;
+}
+.main h2{
+    font-size: 22px;
+    font-weight: bold;
+}
+.main .penulis{
+    font-size: 10px;
+}
+.main a{
+    color: salmon;
+    text-decoration: none;
+}
+.main a:hover{
+    color: rgb(255, 255, 255);
+    background-color: lightblue;
+}
+.main p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.footer{
+    background-color: rgb(12, 12, 12);
+}
+.footer p{
+    font-size: 12px;
+    color: #aeaeae;
+    padding: 15px;
+    text-align: center;
+}
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    font: 10px/15px Arial;
+    float: right;
+}
+.sidebar img{
+    width: 65px;
+    height: 73px;
+    padding: 10px;
+    float: left;
+}
+.sidebar h3{
+    font-weight: bold;
+    color: #444444;
+}
+.sidebar p{
+    text-align: justify;
+}
+/* clearfix */
+/* Clearfix adalah cara praktis yang digunakan untuk clear element yang sebelumnya mengalami float. Clearfix, biasanya digunakan sebagai nama class. Sehingga, kita bisa memanggil ulang kode tersebut dengan nama class di dalam markup. */
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
